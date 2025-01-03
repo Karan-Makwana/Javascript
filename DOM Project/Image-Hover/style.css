@@ -27,20 +27,35 @@ html,body{
 }
 
 .elem h1{
-    font-size: 4vw;
+    font-size: 6vw;
     z-index: 9;
     position: relative;
     mix-blend-mode: difference;
 }
 
-.elem img{
+/* .elem img{
     height: 120px;
     width: 150px;
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
     position: absolute;
-    /* transform: translate(-50%,-50%); */
+    transform: translate(-50%,-50%);
     opacity: 0;
+    transition: all 0.3s linear;
+} */
+
+.elem img {
+    height: 120px;
+    width: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    pointer-events: none; /* Prevent interaction with the image */
     transition: all 0.3s linear;
 }
